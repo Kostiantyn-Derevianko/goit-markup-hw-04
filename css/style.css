@@ -141,8 +141,20 @@ body {
 }
 /*----------- HERO------------- */
 .hero {
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
+
   background-color: #c4c4c4;
-  background-image: url(../img/hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-container {
   padding-bottom: 200px;
@@ -182,6 +194,13 @@ body {
 }
 .feature-item:not(:last-child) {
   margin-right: 30px;
+}
+.feature-box {
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--backgr-btn-color);
+  border-radius: 4px;
 }
 .feature-title {
   margin-bottom: 10px;
