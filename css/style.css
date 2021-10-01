@@ -141,7 +141,8 @@ body {
 }
 /*----------- HERO------------- */
 .hero {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
+  background-image: url(../img/hero.jpg);
 }
 .hero-container {
   padding-bottom: 200px;
