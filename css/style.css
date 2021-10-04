@@ -142,8 +142,7 @@ body {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.mail-icon,
-.phone-icon {
+.header-icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -287,6 +286,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+  padding-bottom: 30px;
 }
 .team-photo {
   margin-bottom: 30px;
@@ -309,20 +309,39 @@ body {
   letter-spacing: 0.03em;
 }
 .team-text {
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-icons {
+.team-icon-list {
+  padding: 0;
   display: flex;
-  outline: 1px solid black;
+  justify-content: center;
 }
-.instagram-icon {
-  fill: teal;
+.team-icon-item:not(:last-child) {
+  margin-right: 10px;
 }
+.team-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+.team-icon {
+  fill: currentColor;
+}
+
 /*---КНОПКИ ФИЛЬТРОВ В ПОРТФОЛИО---*/
 .filter-list {
   display: flex;
