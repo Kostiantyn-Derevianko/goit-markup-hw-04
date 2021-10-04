@@ -316,7 +316,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.team-icons {
+  display: flex;
+  outline: 1px solid black;
+}
+.instagram-icon {
+  fill: teal;
+}
 /*---КНОПКИ ФИЛЬТРОВ В ПОРТФОЛИО---*/
 .filter-list {
   display: flex;
