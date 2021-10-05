@@ -152,7 +152,6 @@ body {
 .hero {
   margin: 0 auto;
   max-width: 1600px;
-  height: 600px;
 
   background-color: #c4c4c4;
   background-image: linear-gradient(
@@ -207,6 +206,7 @@ body {
 }
 .feature-box {
   display: flex;
+
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -301,12 +301,13 @@ body {
 }
 .team-icon-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
   color: var(--icon-color);
+  justify-content: center;
+  align-items: center;
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
@@ -337,11 +338,11 @@ body {
 
   width: 170px;
   height: 92px;
-  align-items: center;
-  justify-content: center;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
   color: var(--icon-color);
+  align-items: center;
+  justify-content: center;
 }
 .client-box-link:hover,
 .client-box-link:focus {
