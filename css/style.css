@@ -12,6 +12,7 @@
   --white-text-color: #ffffff;
   --accent-color: #2196f3;
   --backgr-btn-color: #f5f4fa;
+  --icon-color: #afb1b8;
   --card-set-gap: 30px;
 }
 p,
@@ -147,21 +148,6 @@ body {
   fill: currentColor;
 }
 
-/* .contact-link.mail::before {
-  display: inline-block;
-  content: '';
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url('../img/envelope.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.contact-link.mail:hover::before {
-  background-image: url('../img/envelope.svg');
-} */
-
 /*----------- HERO------------- */
 .hero {
   margin: 0 auto;
@@ -218,7 +204,7 @@ body {
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
-.box {
+.feature-box {
   display: flex;
   margin-bottom: 30px;
   width: 270px;
@@ -228,18 +214,6 @@ body {
   justify-content: center;
 }
 
-/* .feature-item::before {
-  display: block;
-  content: '';
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  background-color: var(--backgr-btn-color);
-  background-image: url(../img/antena.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-} */
 .feature-title {
   margin-bottom: 10px;
 
@@ -331,7 +305,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--icon-color);
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
@@ -339,6 +313,42 @@ body {
   color: var(--white-text-color);
 }
 .team-icon {
+  fill: currentColor;
+}
+
+/*---ПОСТОЯННЫЕ КЛИЕНТЫ---*/
+.client-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.client-list {
+  display: flex;
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-box-link {
+  display: flex;
+
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  color: var(--icon-color);
+}
+.client-box-link:hover,
+.client-box-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.client-icon {
   fill: currentColor;
 }
 
