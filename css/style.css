@@ -151,7 +151,10 @@ body {
 /*----------- HERO------------- */
 .hero {
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
   max-width: 1600px;
+  text-align: center;
 
   background-color: #c4c4c4;
   background-image: linear-gradient(
@@ -164,12 +167,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-.hero-container {
-  padding-bottom: 200px;
-  text-align: center;
-}
 .hero-title {
-  padding-top: 200px;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -261,10 +259,11 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  padding-bottom: 30px;
 }
-.team-photo {
-  margin-bottom: 30px;
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 .team-title {
   margin-bottom: 50px;
@@ -280,7 +279,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .team-text {
@@ -288,7 +286,6 @@ body {
 
   font-size: 16px;
   line-height: calc(19 / 16);
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .team-icon-list {
@@ -402,18 +399,16 @@ body {
   margin-top: var(--card-set-gap);
   border: 1px solid #eeeeee;
 }
-.work-item:hover,
-.work-item:focus {
+.work-link {
+  display: block;
+}
+.work-link:hover,
+.work-link:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
-.work-photo {
-  margin-bottom: 20px;
-}
 .work-content {
-  padding-left: 24px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
 .work-title {
   margin-bottom: 4px;
@@ -483,7 +478,10 @@ body {
 .footer-social-list {
   display: flex;
 }
-.footer-social-item {
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-link {
   display: flex;
 
   width: 44px;
@@ -493,11 +491,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.footer-social-item:not(:last-child) {
-  margin-right: 10px;
-}
-.footer-social-item:hover,
-.footer-social-item:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--accent-color);
 }
 .footer-social-link {
